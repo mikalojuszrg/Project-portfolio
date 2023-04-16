@@ -1,0 +1,9 @@
+@use "../app/styles/utils/color.scss" as color;
+
+.light {
+  background-color: color.$color-secondary-light;
+}
+
+.dark {
+  background-color: color.$color-secondary-dark;
+}

@@ -1,0 +1,31 @@
+@use "../../styles/utils/color.scss" as color;
+
+.container {
+  display: flex;
+  align-items: baseline;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: color.$color-primary-light;
+    margin-left: 0.1rem;
+  }
+
+  &__about {
+    text-decoration: none;
+    color: color.$color-primary-medium;
+  }
+}
+
+.light {
+  background-color: color.$color-secondary-light;
+}
+
+.dark {
+  background-color: color.$color-secondary-dark;
+}
