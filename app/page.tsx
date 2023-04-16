@@ -9,13 +9,14 @@ import { useContext } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   return (
-    <>
+    <div
+      className={`${styles.container} ${
+        theme === "light" ? styles.light : styles.dark
+      }`}
+    >
       <Header />
-      <main className={theme === "light" ? styles.light : styles.dark}>
-        asdasd
-      </main>
-    </>
+    </div>
   );
 }

@@ -2,7 +2,19 @@
 
 .container {
   display: flex;
-  align-items: baseline;
+  justify-content: space-between;
+  padding: 2.4rem 2rem;
+
+  &__left {
+    display: flex;
+    gap: 3rem;
+    align-items: last baseline;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
 
   &__logo {
     display: flex;
@@ -20,12 +32,27 @@
     text-decoration: none;
     color: color.$color-primary-medium;
   }
+
+  &__icon {
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__sun {
+    color: color.$color-secondary-light;
+  }
 }
 
 .light {
   background-color: color.$color-secondary-light;
+  transition: background-color 0.3s ease;
 }
 
 .dark {
   background-color: color.$color-secondary-dark;
+  transition: background-color 0.3s ease;
 }
