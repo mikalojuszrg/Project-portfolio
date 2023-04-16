@@ -21,29 +21,52 @@
     align-items: center;
   }
 
-  &__text {
+  &__textsun {
     font-size: 1.5rem;
     font-weight: bold;
     color: color.$color-primary-light;
     margin-left: 0.1rem;
+    transition: color 0.3s ease;
+  }
+
+  &__textmoon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: color.$color-tertary-dark;
+    margin-left: 0.1rem;
+    transition: color 0.3s ease;
   }
 
   &__about {
     text-decoration: none;
     color: color.$color-primary-medium;
+
+    &:hover {
+      color: color.$color-secondary-light;
+    }
   }
 
   &__icon {
     font-size: 1.4rem;
     cursor: pointer;
-
-    &:hover {
-      opacity: 0.8;
-    }
   }
 
   &__sun {
-    color: color.$color-secondary-light;
+    color: color.$color-tertiary-light;
+
+    &:hover {
+      color: color.$color-secondary-light;
+      transition: color 0.5s ease;
+    }
+  }
+
+  &__moon {
+    color: color.$color-tertiary-light;
+
+    &:hover {
+      color: color.$color-secondary-dark;
+      transition: color 0.5s ease;
+    }
   }
 }
 

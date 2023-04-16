@@ -4,7 +4,13 @@
   width: 40px;
   height: 40px;
 
-  &__path {
+  &__sun {
     fill: color.$color-primary-light;
+    transition: fill 0.3s ease;
+  }
+
+  &__moon {
+    fill: color.$color-tertary-dark;
+    transition: fill 0.3s ease;
   }
 }

@@ -27,9 +27,22 @@ const Header = () => {
       <div className={styles.container__left}>
         <div className={styles.container__logo}>
           <Letter />
-          <span className={styles.container__text}>ikalojus</span>
+          <span
+            className={
+              theme === "light"
+                ? styles.container__textsun
+                : styles.container__textmoon
+            }
+          >
+            ikalojus
+          </span>
         </div>
-        <a href="" className={styles.container__about}>
+        <a
+          href=""
+          className={`${styles.container__about} ${
+            theme === "light" ? styles.container__moon : styles.container__sun
+          }`}
+        >
           About
         </a>
       </div>
