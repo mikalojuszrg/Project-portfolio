@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { ThemeContext } from "@/app/contexts/ThemeContext";
 import picture from "./assets/profile.jpeg";
