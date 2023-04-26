@@ -3,6 +3,7 @@
 import { FaMoon, FaSun } from "react-icons/fa";
 
 import Letter from "./assets/Letter";
+import Link from "next/link";
 import { ThemeContext } from "@/app/contexts/ThemeContext";
 import styles from "./Header.module.scss";
 import { useContext } from "react";
@@ -19,11 +20,7 @@ const Header = () => {
   };
 
   return (
-    <header
-      className={`${styles.container} ${
-        theme === "light" ? styles.light : styles.dark
-      }`}
-    >
+    <header className={styles.container}>
       <div className={styles.container__left}>
         <div className={styles.container__logo}>
           <Letter />
@@ -37,14 +34,14 @@ const Header = () => {
             ikalojus
           </span>
         </div>
-        <a
-          href=""
+        <Link
+          href="/about"
           className={`${styles.container__about} ${
             theme === "light" ? styles.container__moon : styles.container__sun
           }`}
         >
           About
-        </a>
+        </Link>
       </div>
       <div className={styles.container__right}>
         {theme === "light" ? (
