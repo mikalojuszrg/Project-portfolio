@@ -27,6 +27,7 @@
     color: color.$color-primary-light;
     margin-left: 0.1rem;
     transition: color 0.3s ease;
+    text-decoration: none;
   }
 
   &__textmoon {
@@ -35,6 +36,7 @@
     color: color.$color-tertary-dark;
     margin-left: 0.1rem;
     transition: color 0.3s ease;
+    text-decoration: none;
   }
 
   &__about {

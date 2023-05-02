@@ -1,0 +1,41 @@
+@use "../../styles/utils/color.scss" as color;
+
+.select {
+  font-size: 1rem;
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.2rem;
+  margin-bottom: 0.4rem;
+  background-color: color.$color-secondary-light;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &__sun {
+    border: 0.2px solid color.$color-tertiary-light;
+    color: color.$color-primary-medium;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+  }
+
+  &__moon {
+    border: 0.2px solid color.$color-primary-medium;
+    color: color.$color-tertiary-light;
+    background-color: color.$color-secondary-dark;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+  }
+}
+
+.label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
