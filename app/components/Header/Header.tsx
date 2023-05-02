@@ -22,18 +22,20 @@ const Header = () => {
   return (
     <header className={styles.container}>
       <div className={styles.container__left}>
-        <div className={styles.container__logo}>
-          <Letter />
-          <span
-            className={
-              theme === "light"
-                ? styles.container__textsun
-                : styles.container__textmoon
-            }
-          >
-            ikalojus
-          </span>
-        </div>
+        <Link href="/">
+          <div className={styles.container__logo}>
+            <Letter />
+            <span
+              className={
+                theme === "light"
+                  ? styles.container__textsun
+                  : styles.container__textmoon
+              }
+            >
+              ikalojus
+            </span>
+          </div>
+        </Link>
         <Link
           href="/about"
           className={`${styles.container__about} ${
