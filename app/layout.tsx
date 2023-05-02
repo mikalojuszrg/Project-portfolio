@@ -1,13 +1,12 @@
 import "./globals.scss";
 
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
 import { Montserrat } from "@next/font/google";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import ThemeWrapper from "./components/ThemeWrapper/ThemeWrapper";
 
 const montserrat = Montserrat({
   weight: ["400", "700"],
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -24,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider>
-        <body className={montserrat.className}>
+        <body className={montserrat.variable}>
           <ThemeWrapper>{children}</ThemeWrapper>
         </body>
       </ThemeProvider>
