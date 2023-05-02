@@ -1,5 +1,9 @@
+import styles from "./Footer.module.scss";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className={styles.container}>Created by Mikalojus Žirgulis</footer>
+  );
 };
 
 export default Footer;
