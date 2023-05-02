@@ -28,7 +28,7 @@ const HeroSection = () => {
           >
             Mikalojus{" "}
           </span>
-          👋
+          👈
         </h1>
         <p
           className={
