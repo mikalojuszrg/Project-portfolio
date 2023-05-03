@@ -1,0 +1,7 @@
+@mixin responsive-font-size($breakpoints) {
+  font-size: $breakpoints;
+
+  @include large {
+    font-size: $breakpoints / 1.3;
+  }
+}

@@ -1,5 +1,6 @@
 @use "../../styles/utils/color.scss" as color;
 @import "../../styles/mixins/mediaQueries.scss";
+@import "../../styles/mixins/fontSizes.scss";
 
 .container {
   display: flex;
@@ -18,6 +19,7 @@
 
     @include medium {
       text-align: center;
+      width: 100%;
     }
   }
 
@@ -32,24 +34,25 @@
   }
 
   &__headingSun {
-    font-size: 3rem;
+    @include responsive-font-size(3rem);
+    // font-size: 3rem;
     margin-bottom: 1rem;
   }
 
   &__headingMoon {
-    font-size: 3rem;
+    @include responsive-font-size(3rem);
     margin-bottom: 1rem;
     color: color.$color-secondary-light;
   }
 
   &__descriptionSun {
-    font-size: 1.3rem;
+    @include responsive-font-size(1.3rem);
     margin-top: 0;
     color: color.$color-primary-medium;
   }
 
   &__descriptionMoon {
-    font-size: 1.3rem;
+    @include responsive-font-size(1.3rem);
     margin-top: 0;
     color: color.$color-tertiary-light;
   }
@@ -60,6 +63,20 @@
 
   &__nameMoon {
     color: color.$color-tertary-dark;
+  }
+
+  &__iconLeft {
+    @include medium {
+      display: none;
+    }
+  }
+
+  &__iconUp {
+    display: none;
+
+    @include medium {
+      display: block;
+    }
   }
 
   &__image {
