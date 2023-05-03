@@ -28,7 +28,8 @@ const HeroSection = () => {
           >
             Mikalojus{" "}
           </span>
-          👈
+          <span className={styles.container__iconLeft}>👈</span>
+          <span className={styles.container__iconUp}>☝️</span>
         </h1>
         <p
           className={
