@@ -1,4 +1,5 @@
 @use "../../styles/utils/color.scss" as color;
+@import "../../styles/mixins/mediaQueries.scss";
 
 .container {
   display: flex;
@@ -6,16 +7,28 @@
   align-items: center;
   padding: 1rem 4rem;
 
+  @include medium {
+    flex-direction: column;
+  }
+
   &__left {
     width: 60%;
     display: flex;
     flex-direction: column;
+
+    @include medium {
+      text-align: center;
+    }
   }
 
   &__right {
     width: 40%;
     display: flex;
     justify-content: flex-end;
+
+    @include medium {
+      width: auto;
+    }
   }
 
   &__headingSun {
