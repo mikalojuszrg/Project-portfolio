@@ -1,3 +1,6 @@
+@use "../../styles/utils/color.scss" as color;
+@import "../../styles/mixins/mediaQueries.scss";
+
 .container {
   margin-top: auto;
   text-align: center;
@@ -5,4 +8,13 @@
   padding: 0.5rem 0rem;
   margin: 0rem 4rem;
   border-top: 0.2px solid black;
+
+  @include medium {
+    margin: 0rem 1.5rem;
+  }
+
+  &__moon {
+    color: color.$color-tertiary-light;
+    border-top: 0.2px solid color.$color-tertiary-light;
+  }
 }

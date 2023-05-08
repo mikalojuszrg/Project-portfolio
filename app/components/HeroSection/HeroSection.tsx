@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
+import ProfileImage from "../ProfileImage/ProfileImage";
 import { ThemeContext } from "@/app/contexts/ThemeContext";
-import picture from "./assets/profile.jpeg";
 import styles from "./HeroSection.module.scss";
 import { useContext } from "react";
 
@@ -42,11 +41,7 @@ const HeroSection = () => {
         </p>
       </div>
       <div className={styles.container__right}>
-        <Image
-          src={picture}
-          alt="profile"
-          className={styles.container__image}
-        />
+        <ProfileImage />
       </div>
     </section>
   );

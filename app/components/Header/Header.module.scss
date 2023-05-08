@@ -1,9 +1,14 @@
 @use "../../styles/utils/color.scss" as color;
+@import "../../styles/mixins/mediaQueries.scss";
 
 .container {
   display: flex;
   justify-content: space-between;
   padding: 2.4rem 4rem;
+
+  @include medium {
+    padding: 2.4rem 1.5rem;
+  }
 
   &__left {
     display: flex;

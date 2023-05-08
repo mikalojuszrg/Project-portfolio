@@ -1,0 +1,9 @@
+.image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 60% 60% 40% 70% / 40% 100% 30% 70%;
+  border: 1px solid white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
